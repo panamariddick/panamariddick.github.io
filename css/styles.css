@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #fff;
+}
+
+header{
+    width: 100%;
+    overflow: hidden;
+    background: #3F51B5;
+    
+}
+
+.wrapper{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header .logo{
+    color: #f2f2f2;
+    font-size: 25px;
+    line-height: 100px;
+    float: left;
+    font-style: inherit;
+}
+
+header nav{
+    float: right;
+    line-height: 100px;
+} 
+
+header nav a{
+    display: inline-block;
+    color: #fff;
+    text-decoration:none ;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+header nav a:hover{
+    background: #fff;
+    border-radius: 50px;
+    color: #000;
+
+}
+
+.header2{
+    position: fixed;
+    height: 100px;
+
+}
+
+.header2 .logo {
+    line-height: 100px;
+    font-size: 30px;
+}
+
+.header2 nav{
+    line-height: 100px;
+}
+
+.contenido{
+}
+/*Agregamos un espaciado a la clase contenido para que no este pegada*/
+.contenido p {
+    margin-bottom: 1em;
+    
+}
+
+.container span{
+    font-size: 32px;
+    color: #fff;
+    
+}
+
+/*CSS DEL BANNER*/
+.banner{
+    background-image: url('../images/banner.png');
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+    padding: 0 0;
+    margin: 0 0;
+}
+.banner-content{
+    color: #ffffff;
+    width: 55%;
+    padding-top: 170px;
+}
+.banner-content span{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+.banner-content h1{
+    margin-bottom: 18px;
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-family: sans-serif;
+}
+banner-content p{
+    margin-bottom: 48px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+.banner-content a{
+    text-decoration: none;
+    margin-right: 20px;
+}
+.banner-content .btn-one{
+    padding: 10px 30px;
+    background-color: rgba(0,0,0,0.3);
+    border: 2px solid #fff;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    color: #fff;
+}
+.banner-content .btn-two{
+    padding: 10px 30px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    color: #000;
+}
+
+.banner-content .btn-one:hover{
+   background-color: #fff;
+   border: 2px solid #fff;
+   color: #000;
+}
+.banner-content .btn-two:hover{
+    background-color: #000;
+    border: 2px solid #fff;
+    color: #fff;
+ }
+ /*Css del Footer*/
+ footer{
+     background: #f1f1f1;
+     padding: 5px 0;
+ }
+ .footer-container{
+     max-width: 1300px;
+     margin: auto;
+     padding: 0 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap-reverse; 
+ }
+ .logofooter{
+    width: 180px;
+ }
+ .social-media{
+     margin: 20px 0;
+ }
+ .social-media a{
+     color: #001a21;
+     margin-right: 25px;
+     font-size: 22px;
+     text-decoration: none;
+     transition: .3s linear;
+ }
+ .social-media a:hover{
+     color: #fc5c65;
+ }
+
+ /*CSS SERVICES*/
+ .service{
+     display: none;
+ }
+ .services{
+     margin: 90px auto;
+     text-align: center;
+ }
+
+ h1{
+     font-family: sans-serif;
+     letter-spacing: 1px;
+ }
+ h1::after{
+     content: '';
+     background: white;
+     display: block;
+     width: 150px;
+     height: 3px;
+     margin: 10px auto;
+
+ }
+ .icon{
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid white;
+    border-radius: 50%;
+ }
+ .col-md-3:hover{
+     box-shadow: 5px 7px 9px -3px rgba(0, 0, 0, 0.5);
+     cursor: pointer;
+ }
+
+/*Hacemos que la web sea responsive*/
+@media screen and (max-width: 950px){
+    header .logo,
+    header nav {
+        width:100%;
+        text-align:center;
+        line-heigth:100px;
+    }
+
+    .header2{
+        height: auto;
+    }
+    .header2 .logo, 
+    header2 nav{
+        line-height: 50px;
+    }
+    /*Responsive banner*/
+    .banner{
+        width: auto;
+        text-align: center;
+    }
+    .banner-content{
+        width: auto;
+        text-align: center;
+    }
+
+    .footer-container{
+        max-width: 600px;
+    }
+    .left-col{
+        width: 100%;
+        text-align: center;
+    }
+
+
+}
